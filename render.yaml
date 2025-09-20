@@ -2,6 +2,7 @@ services:
   - type: web
     name: finance-bot
     env: python
-    plan: free
+    pythonVersion: "3.10"
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
+    plan: free
